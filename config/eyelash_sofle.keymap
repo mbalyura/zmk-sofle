@@ -42,7 +42,7 @@
     combos {
         compatible = "zmk,combos";
 
-        Ieft_par {
+        left_par {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <17 18>;
         };
@@ -52,12 +52,12 @@
             key-positions = <20 21>;
         };
 
-        left_br {
+        left_brk {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <30 31>;
         };
 
-        right_br {
+        right_brk {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <33 34>;
         };
