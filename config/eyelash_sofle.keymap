@@ -31,9 +31,9 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        layer_3 {
+        layer_5 {
             if-layers = <1 2>;
-            then-layer = <3>;
+            then-layer = <5>;
         };
     };
 };
@@ -78,11 +78,11 @@
 
         layer_0 {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6   &kp N7       &kp N8          &kp N9      &kp N0      &kp DELETE
-&kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y    &kp U        &kp I           &kp O       &kp P       &kp MINUS
-&kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H    &kp J        &kp K           &kp L       &kp SEMI    &kp APOS
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N    &kp M        &kp COMMA       &kp DOT     &kp FSLH    &kp EQUAL
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp C_MUTE       &kp TAB  &lt 2 ENTER  &kp LEFT_SHIFT  &kp ESCAPE  &kp DELETE
+&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5         &kp UP_ARROW     &kp N6     &kp N7       &kp N8          &kp N9      &kp N0      &kp DELETE
+&kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T          &kp DOWN_ARROW   &kp Y      &kp U        &kp I           &kp O       &kp P       &kp MINUS
+&kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G          &kp LEFT_ARROW   &kp H      &kp J        &kp K           &kp L       &kp SEMI    &kp APOS
+&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B          &kp RIGHT_ARROW  &kp N      &kp M        &kp COMMA       &kp DOT     &kp FSLH    &kp EQUAL
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &lt 4 SPACE    &kp C_MUTE       &lt 3 TAB  &lt 2 ENTER  &kp LEFT_SHIFT  &kp ESCAPE  &kp DELETE
             >;
 
             display-name = "ALPHA";
@@ -114,6 +114,30 @@
 
         layer_3 {
             bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans     &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans     &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans     &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans     &trans        &trans
+            >;
+
+            label = "RIGHT MODS";
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "LEFT MODS";
+        };
+
+        layer_5 {
+            bindings = <
 &trans      &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3       &bt BT_SEL 4    &trans  &trans           &trans           &trans           &trans           &trans           &trans
 &trans      &bt BT_CLR    &bt BT_CLR_ALL  &trans        &ext_power EP_TOG  &trans          &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &trans
 &trans      &out OUT_USB  &out OUT_BLE    &trans        &trans             &trans          &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &trans
@@ -122,16 +146,6 @@
             >;
 
             display-name = "SYSTEM";
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
         };
     };
 };
