@@ -57,7 +57,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - NAV
+  - {t: '$$mdi:keyboard-esc$$', h: NAV}
   - $$mdi:keyboard-space$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:keyboard-tab$$', h: RIGHT MODS}
