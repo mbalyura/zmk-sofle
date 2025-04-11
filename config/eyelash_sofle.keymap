@@ -78,11 +78,11 @@
 
         layer_0 {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4        &kp N5       &kp C_VOLUME_UP    &kp N6     &kp N7       &kp N8      &kp N9          &kp N0      &kp DELETE
-&kp TAB     &kp Q      &kp W         &kp E         &kp R         &kp T        &kp C_VOLUME_DOWN  &kp Y      &kp U        &kp I       &kp O           &kp P       &kp MINUS
-&kp CAPS    &kp A      &kp S         &kp D         &kp F         &kp G        &kp LEFT_ARROW     &kp H      &kp J        &kp K       &kp L           &kp SEMI    &kp APOS
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp V         &kp B        &kp RIGHT_ARROW    &kp N      &kp M        &kp COMMA   &kp DOT         &kp FSLH    &kp EQUAL
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 ESCAPE  &kp SPACE    &kp C_MUTE         &lt 4 TAB  &lt 2 ENTER  &kp ESCAPE  &kp LEFT_SHIFT  &kp DELETE
+&kp ESC     &kp N1        &kp N2        &kp N3     &kp N4        &kp N5       &kp C_VOLUME_UP    &kp N6     &kp N7       &kp N8          &kp N9         &kp N0      &kp DELETE
+&kp TAB     &kp Q         &kp W         &kp E      &kp R         &kp T        &kp C_VOLUME_DOWN  &kp Y      &kp U        &kp I           &kp O          &kp P       &kp MINUS
+&kp CAPS    &kp A         &kp S         &kp D      &kp F         &kp G        &kp LEFT_ARROW     &kp H      &kp J        &kp K           &kp L          &kp SEMI    &kp APOS
+&kp LSHFT   &kp Z         &kp X         &kp C      &kp V         &kp B        &kp RIGHT_ARROW    &kp N      &kp M        &kp COMMA       &kp DOT        &kp FSLH    &kp EQUAL
+&kp C_MUTE  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &lt 1 ESCAPE  &kp SPACE    &kp C_MUTE         &lt 4 TAB  &lt 2 ENTER  &kp LEFT_SHIFT  &kp RC(SPACE)  &kp DELETE
             >;
 
             display-name = "ALPHA";
@@ -90,10 +90,10 @@
 
         layer_1 {
             bindings = <
-&trans      &trans        &trans        &trans     &trans          &trans       &mmv MOVE_UP     &trans     &trans              &trans              &trans               &trans  &trans
-&trans      &kp LC(Q)     &kp LC(W)     &kp LC(E)  &kp LC(R)       &kp LC(T)    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME            &kp UP              &kp END              &trans  &trans
-&trans      &sk LEFT_GUI  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT  &kp LC(G)    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT            &kp DOWN            &kp RIGHT            &trans  &kp DELETE
-&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LC(B)    &mmv MOVE_RIGHT  &kp LC(N)  &kt LC(LEFT_ARROW)  &kp K_CONTEXT_MENU  &kp LC(RIGHT_ARROW)  &trans  &trans
+&trans      &trans        &trans        &trans     &trans          &trans       &mmv MOVE_UP     &trans     &trans              &trans              &trans               &trans         &trans
+&trans      &kp LC(Q)     &kp LC(W)     &kp LC(E)  &kp LC(R)       &kp LC(T)    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME            &kp UP              &kp END              &trans         &trans
+&trans      &sk LEFT_GUI  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT  &kp LC(G)    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT            &kp DOWN            &kp RIGHT            &kp LC(SEMI)   &kp DELETE
+&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LC(B)    &mmv MOVE_RIGHT  &kp LC(N)  &kt LC(LEFT_ARROW)  &kp K_CONTEXT_MENU  &kp LC(RIGHT_ARROW)  &kp LC(SLASH)  &trans
 &kp C_MUTE  &trans        &trans        &trans     &trans          &trans       &mkp LCLK        &trans     &trans              &trans              &trans               &trans
             >;
 
