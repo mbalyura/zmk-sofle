@@ -112,7 +112,7 @@ layers:
   - Ctl+V
   - Ctl+B
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - Ctl+K
+  - Ctl+N
   - {t: 'Ctl+$$mdi:arrow-left-bold$$', h: toggle}
   - CONTEXT MENU
   - Ctl+$$mdi:arrow-right-bold$$
