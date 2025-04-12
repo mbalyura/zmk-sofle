@@ -157,7 +157,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - F12
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:alpha-w-box$$
   - '!'
   - '@'
   - '#'
@@ -171,9 +171,9 @@ layers:
   - )
   - PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '=', s: +}
   - {t: '-', s: _}
-  - $$mdi:alpha-w-box$$
   - _
   - +
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
