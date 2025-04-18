@@ -17,28 +17,28 @@ layers:
   - $$mdi:keyboard-tab$$
   - Q
   - W
-  - E
-  - R
-  - T
-  - $$mdi:volume-low$$
-  - Y
-  - U
-  - I
-  - O
+  - F
   - P
+  - G
+  - $$mdi:volume-low$$
+  - J
+  - L
+  - U
+  - Y
+  - {t: ;, s: ':'}
   - {t: '[', s: '{'}
   - $$mdi:apple-keyboard-caps$$
   - A
+  - R
   - S
+  - T
   - D
-  - F
-  - G
   - $$mdi:arrow-left-bold$$
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - N
+  - E
+  - I
+  - O
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - Z
@@ -47,7 +47,7 @@ layers:
   - V
   - B
   - $$mdi:arrow-right-bold$$
-  - N
+  - K
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
@@ -82,28 +82,28 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Q
   - Ctl+W
-  - Ctl+E
-  - Ctl+R
-  - Ctl+T
+  - Ctl+F
+  - Ctl+P
+  - Ctl+G
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Ctl+;, s: 'Ctl+:'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - Ctl+G
+  - Ctl+D
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: Ctl+;, s: 'Ctl+:'}
+  - Ctl+O
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Z
@@ -112,7 +112,7 @@ layers:
   - Ctl+V
   - Ctl+B
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - Ctl+N
+  - Ctl+K
   - {t: Ctl+M, h: toggle}
   - {t: 'Ctl+,', s: Ctl+<}
   - Ctl+.
