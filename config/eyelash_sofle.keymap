@@ -58,11 +58,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans        &trans        &trans     &trans          &trans       &mmv MOVE_UP     &trans     &trans              &trans              &trans               &trans         &trans
-&trans  &kp LC(Q)     &kp LC(W)     &kp LC(E)  &kp LC(R)       &kp LC(T)    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME            &kp UP              &kp END              &trans         &trans
-&trans  &sk LEFT_GUI  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT  &kp LC(G)    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT            &kp DOWN            &kp RIGHT            &kp LC(SEMI)   &trans
-&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LC(B)    &mmv MOVE_RIGHT  &kp LC(N)  &kt LC(LEFT_ARROW)  &kp K_CONTEXT_MENU  &kp LC(RIGHT_ARROW)  &kp LC(SLASH)  &trans
-&trans  &trans        &trans        &trans     &trans          &trans       &mkp LCLK        &trans     &trans              &trans              &trans               &trans
+&trans  &trans        &trans        &trans     &trans          &trans       &mmv MOVE_UP     &trans     &trans     &trans         &trans          &trans         &trans
+&trans  &kp LC(Q)     &kp LC(W)     &kp LC(E)  &kp LC(R)       &kp LC(T)    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME   &kp UP         &kp END         &trans         &trans
+&trans  &sk LEFT_GUI  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT  &kp LC(G)    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT   &kp DOWN       &kp RIGHT       &kp LC(SEMI)   &trans
+&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LC(B)    &mmv MOVE_RIGHT  &kp LC(N)  &kt LC(M)  &kp LC(COMMA)  &kp LC(PERIOD)  &kp LC(SLASH)  &trans
+&trans  &trans        &trans        &trans     &trans          &trans       &mkp LCLK        &trans     &trans     &trans         &trans          &trans
             >;
 
             display-name = "NAV";
