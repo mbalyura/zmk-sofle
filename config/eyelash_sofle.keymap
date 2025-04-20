@@ -1,6 +1,12 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
+//  0  1  2  3  4  5      6      7  8  9 10 11 12
+// 13 14 15 16 17 18     19     20 21 22 23 24 25
+// 26 27 28 29 30 31     32     33 34 35 36 37 38
+// 39 40 41 42 43 44     45     46 47 48 49 50 51
+
+
 #define LEFT_KEYS 0 1 2 3 4 5 13 14 15 16 17 18  26 27 28 29 30 31 39 40 41 42 43 44 // left-hand keys
 #define RIGHT_KEYS 7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51 // right-hand keys
 
@@ -51,13 +57,13 @@
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            require-prior-idle-ms = <150>;
+            flavor = "balanced"; //produces a "hold" if another key is both pressed and released within the tapping-term.
+            require-prior-idle-ms = <150>; // immediately resolves a HRM as "tap" when it is pressed shortly after another key has been tapped.
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <RIGHT_KEYS>; // List of keys on the right side of the keyboard
-            hold-trigger-on-release;
+            hold-trigger-on-release; //delays the positional-hold-tap decision until the next key's release. With this, mods can be combined when held
         };
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
@@ -77,11 +83,11 @@
 
         layer_0 {
             bindings = <
-&kp GRAVE  &kp N1        &kp N2        &kp N3     &kp N4        &kp N5       &kp C_VOLUME_UP    &kp N6              &kp N7       &kp N8                  &kp N9         &kp N0                   &kp RIGHT_BRACKET
-&kp TAB    &kp Q         &kp W         &kp F      &kp P         &kp G        &kp C_VOLUME_DOWN  &kp J               &kp L        &kp U                   &kp Y          &kp SEMI                 &kp LEFT_BRACKET
-&kp CAPS   &kp A         &kp R         &kp S      &kp T         &kp D        &kp LEFT_ARROW     &kp H               &kp N        &kp E                   &kp I          &kp O                    &kp APOS
-&kp LSHFT  &kp Z         &kp X         &kp C      &kp V         &kp B        &kp RIGHT_ARROW    &kp K               &kp M        &kp COMMA               &kp DOT        &kp FSLH                 &kp DELETE
-&trans     &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &lt 1 ESCAPE  &kp SPACE    &kp C_MUTE         &mt LEFT_SHIFT TAB  &lt 2 ENTER  &kp LA(LC(LEFT_SHIFT))  &kp RC(SPACE)  &mt RIGHT_ALT LG(SPACE)
+&kp GRAVE    &kp N1            &kp N2             &kp N3          &kp N4              &kp N5         &kp C_VOLUME_UP        &kp N6               &kp N7              &kp N8                   &kp N9             &kp N0                    &kp RIGHT_BRACKET
+&kp TAB      &kp Q             &kp W              &kp F           &kp P               &kp G          &kp C_VOLUME_DOWN      &kp J                &kp L               &kp U                    &kp Y              &kp SEMI                  &kp LEFT_BRACKET
+&kp CAPS     &hml LEFT_GUI A   &hml LEFT_ALT R    &hml LCTRL S    &hml LEFT_SHIFT T   &kp D          &kp LEFT_ARROW         &kp H                &hmr LEFT_SHIFT N   &hmr LCTRL E             &hmr LEFT_ALT I    &hmr LEFT_GUI   O         &kp APOS
+&kp LSHFT    &kp Z             &kp X              &kp C           &kp V               &kp B          &kp RIGHT_ARROW        &kp K                &kp M               &kp COMMA                &kp DOT            &kp FSLH                  &kp DELETE
+&trans       &kp LEFT_GUI      &kp LEFT_ALT       &kp LCTRL       &lt 1 ESCAPE        &kp SPACE      &kp C_MUTE             &mt LEFT_SHIFT TAB   &lt 2 ENTER         &kp LA(LC(LEFT_SHIFT))   &kp RC(SPACE)      &mt RIGHT_ALT LG(SPACE)
             >;
 
             display-name = "ALPHA";
@@ -91,7 +97,7 @@
             bindings = <
 &trans  &trans        &trans        &trans     &trans          &trans       &mmv MOVE_UP     &trans     &trans     &trans         &trans          &trans         &trans
 &trans  &kp LC(Q)     &kp LC(W)     &kp LC(F)  &kp LC(P)       &kp LC(G)    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME   &kp UP         &kp END         &kp LC(SEMI)   &trans
-&trans  &sk LEFT_GUI  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT  &kp LC(D)    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT   &kp DOWN       &kp RIGHT       &kp LC(O)      &trans
+&trans  &kp LEFT_GUI  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT  &kp LC(D)    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT   &kp DOWN       &kp RIGHT       &kp LC(O)      &trans
 &trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LC(B)    &mmv MOVE_RIGHT  &kp LC(K)  &kt LC(M)  &kp LC(COMMA)  &kp LC(PERIOD)  &kp LC(SLASH)  &trans
 &trans  &trans        &trans        &trans     &trans          &trans       &mkp LCLK        &trans     &trans     &trans         &trans          &trans
             >;
