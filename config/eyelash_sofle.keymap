@@ -43,7 +43,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        layer_5 {
+        sys_layer {
             if-layers = <1 2>;
             then-layer = <3>;
         };
@@ -83,50 +83,51 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        alpha_layer {
             bindings = <
-&kp GRAVE    &kp N1           &kp N2         &kp N3         &kp N4          &kp N5            &kp C_VOLUME_UP         &kp N6               &kp N7          &kp N8                   &kp N9          &kp N0                   &kp RIGHT_BRACKET
-&kp TAB      &kp Q            &kp W          &kp F          &kp P           &kp G             &kp C_VOLUME_DOWN       &kp J                &kp L           &kp U                    &kp Y           &kp SEMI                 &kp LEFT_BRACKET
-&kp CAPS     &hml LEFT_GUI A  &hml LALT R    &hml LCTRL S   &hml LSHIFT T   &kp D             &kp LEFT_ARROW          &kp H                &hmr LSHIFT N   &hmr LCTRL E             &hmr LALT I     &hmr LEFT_GUI O          &kp APOS
-// &kp CAPS     &kp A            &kp R          &kp S          &kp T           &kp D             &kp LEFT_ARROW          &kp H                &kp N           &kp E                    &kp I           &kp O                    &kp APOS
-&kp LSHFT    &kp Z            &kp X          &kp C          &kp V           &kp B             &kp RIGHT_ARROW         &kp K                &kp M           &kp COMMA                &kp DOT         &kp FSLH                 &kp DELETE
-&trans       &kp LEFT_GUI     &kp LEFT_ALT   &kp LCTRL      &lt 1 ESCAPE    &kp SPACE         &kp C_MUTE              &mt LEFT_SHIFT TAB   &lt 2 ENTER     &kp LA(LC(LEFT_SHIFT))   &kp RC(SPACE)   &mt RIGHT_ALT LG(SPACE)
+&kp GRAVE   &kp N1        &kp N2         &kp N3          &kp N4          &kp N5          &kp C_VOLUME_UP         &kp N6             &kp N7          &kp N8           &kp N9          &kp N0                   &kp RIGHT_BRACKET
+&kp TAB     &kp Q         &kp W          &kp F           &kp P           &kp G           &kp C_VOLUME_DOWN       &kp J              &kp L           &kp U            &kp Y           &kp SEMI                 &kp LEFT_BRACKET
+// &kp CAPS    &hml LGUI A   &hml LALT R    &hml LCTRL S    &hml LSHIFT T   &kp D           &kp LEFT_ARROW          &kp H              &hmr LSHIFT N   &hmr LCTRL E     &hmr LALT I     &hmr LGUI O              &kp APOS
+&kp CAPS    &kp A         &kp R          &kp S           &kp T           &kp D           &kp LEFT_ARROW          &kp H              &kp N           &kp E            &kp I           &kp O                    &kp APOS
+&kp LSHFT   &kp Z         &kp X          &kp C           &kp V           &kp B           &kp RIGHT_ARROW         &kp K              &kp M           &kp COMMA        &kp DOT         &kp FSLH                 &kp DELETE
+&trans      &kp LGUI      &kp LALT       &kp LCTRL       &lt 1 ESCAPE    &kp SPACE       &kp C_MUTE              &mt LSHIFT TAB     &lt 2 ENTER     &kp LS(LC(LA))   &kp RC(SPACE)   &mt RIGHT_ALT LG(SPACE)
             >;
 
             display-name = "ALPHA";
         };
 
-        layer_1 {
+        nav_layer {
             bindings = <
-&trans  &trans        &trans        &trans     &trans          &trans       &mmv MOVE_UP     &trans     &trans     &trans         &trans          &trans         &trans
-&trans  &kp LC(Q)     &kp LC(W)     &kp LC(F)  &kp LC(P)       &kp LC(G)    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME   &kp UP         &kp END         &kp LC(SEMI)   &trans
-&trans  &kp LEFT_GUI  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_SHIFT  &kp LC(D)    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT   &kp DOWN       &kp RIGHT       &kp LC(O)      &trans
-&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LC(B)    &mmv MOVE_RIGHT  &kp LC(K)  &kt LC(M)  &kp LC(COMMA)  &kp LC(PERIOD)  &kp LC(SLASH)  &trans
-&trans  &trans        &trans        &trans     &trans          &trans       &mkp LCLK        &trans     &trans     &trans         &trans          &trans
+&trans      &trans        &trans        &trans           &trans          &trans          &mmv MOVE_UP            &trans             &trans          &trans          &trans            &trans                  &trans
+&trans      &kp LC(Q)     &kp LC(W)     &kp LC(F)        &kp LC(P)       &kp LC(G)       &mmv MOVE_DOWN          &kp PG_UP          &kp HOME        &kp UP          &kp END           &kp LC(SEMI)            &trans
+&trans      &kp LGUI      &sk LALT      &sk LCTRL        &sk LSHIFT      &kp LC(D)       &mmv MOVE_LEFT          &kp PG_DN          &kp LEFT        &kp DOWN        &kp RIGHT         &kp LC(O)               &trans
+&trans      &kp LC(Z)     &kp LC(X)     &kp LC(C)        &kp LC(V)       &kp LC(B)       &mmv MOVE_RIGHT         &kp LC(K)          &kt LC(M)       &kp LC(COMMA)   &kp LC(PERIOD)    &kp LC(SLASH)           &trans
+&trans      &trans        &trans        &trans           &trans          &trans          &mkp LCLK               &trans             &trans          &trans          &trans            &trans
             >;
 
             display-name = "NAV";
         };
 
-        layer_2 {
+        symb_layer {
             bindings = <
-&trans      &kp F1    &kp F2     &kp F3     &kp F4      &kp F5         &mmv MOVE_UP     &kp F6            &kp F7         &kp F8          &kp F9                &kp F10                &kp F11
-&trans      &kp N1    &kp N2     &kp N3     &kp N4      &kp N5         &mmv MOVE_DOWN   &kp N6            &kp N7         &kp N8          &kp N9                &kp N0                 &kp F12
-&caps_word  &kp EXCL  &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT    &mmv MOVE_LEFT   &kp CARET         &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PRINTSCREEN
-&trans      &kp PIPE  &kp EQUAL  &kp MINUS  &kp UNDER   &kp PLUS       &mmv MOVE_RIGHT  &kp LEFT_BRACKET  &kp RBKT       &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH          &trans
-&trans      &trans    &trans     &trans     &trans      &trans         &mkp RCLK        &trans            &trans         &trans          &trans                &trans
+&trans      &kp F1        &kp F2        &kp F3           &kp F4          &kp F5          &mmv MOVE_UP            &kp F6             &kp F7          &kp F8          &kp F9            &kp F10                &kp F11
+// &trans      &kp N1        &kp N2        &kp N3           &kp N4          &kp N5          &mmv MOVE_DOWN          &kp N6             &kp N7          &kp N8          &kp N9            &kp N0                 &kp F12
+&trans      &kp EXCL      &kp AT        &kp HASH         &kp DOLLAR      &kp PERCENT     &mmv MOVE_DOWN          &kp CARET          &kp AMPERSAND   &kp ASTERISK    &kp LPAR          &kp RPAR               &kp F12
+&trans      &kp PLUS      &kp EQUAL     &kp MINUS        &kp UNDER       &kp LBRC        &mmv MOVE_LEFT          &kp RBRC           &sk LSHIFT      &sk LCTRL       &sk LALT          &kp LGUI               &kp PRINTSCREEN
+&trans      &kp PIPE      &trans        &caps_word       &trans          &kp LBKT        &mmv MOVE_RIGHT         &kp RBKT           &kp RBKT        &trans          &trans            &kp BACKSLASH          &trans
+&trans      &trans        &trans        &trans           &trans          &trans          &mkp RCLK               &trans             &trans          &trans          &trans            &trans
             >;
 
-            display-name = "SYMB";
+            display-name = "SYMBOL";
         };
 
-        layer_3 {
+        sys_layer {
             bindings = <
-&trans      &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3       &bt BT_SEL 4    &trans  &trans           &trans           &trans           &trans           &trans           &trans
-&trans      &bt BT_CLR    &bt BT_CLR_ALL  &trans        &ext_power EP_TOG  &trans          &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &trans
-&trans      &out OUT_USB  &out OUT_BLE    &trans        &trans             &trans          &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &trans
-&sys_reset  &bootloader   &trans          &trans        &trans             &trans          &trans  &trans           &trans           &trans           &soft_off        &bootloader      &sys_reset
-&trans      &trans        &trans          &trans        &trans             &trans          &trans  &trans           &trans           &trans           &trans           &trans
+&none       &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3       &bt BT_SEL 4  &none                   &none              &none           &none            &none            &none                  &none
+&none       &bt BT_CLR    &bt BT_CLR_ALL  &none         &ext_power EP_TOG  &none         &none                   &rgb_ug RGB_TOG    &rgb_ug RGB_BRI &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI        &none
+&none       &out OUT_USB  &out OUT_BLE    &none         &none              &none         &none                   &rgb_ug RGB_EFF    &rgb_ug RGB_BRD &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD        &none
+&sys_reset  &bootloader   &none           &none         &none              &none         &none                   &none              &none           &none            &soft_off        &bootloader            &sys_reset
+&none       &none         &none           &none         &none              &none         &none                   &none              &none           &none            &none            &none
             >;
 
             display-name = "SYSTEM";
