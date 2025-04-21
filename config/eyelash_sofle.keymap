@@ -85,12 +85,12 @@
 
         alpha_layer {
             bindings = <
-&kp GRAVE   &kp N1        &kp N2         &kp N3          &kp N4          &kp N5          &kp C_VOLUME_UP         &kp N6             &kp N7          &kp N8           &kp N9          &kp N0                   &kp RIGHT_BRACKET
-&kp TAB     &kp Q         &kp W          &kp F           &kp P           &kp G           &kp C_VOLUME_DOWN       &kp J              &kp L           &kp U            &kp Y           &kp SEMI                 &kp LEFT_BRACKET
-// &kp CAPS    &hml LGUI A   &hml LALT R    &hml LCTRL S    &hml LSHIFT T   &kp D           &kp LEFT_ARROW          &kp H              &hmr LSHIFT N   &hmr LCTRL E     &hmr LALT I     &hmr LGUI O              &kp APOS
-&kp CAPS    &kp A         &kp R          &kp S           &kp T           &kp D           &kp LEFT_ARROW          &kp H              &kp N           &kp E            &kp I           &kp O                    &kp APOS
-&kp LSHFT   &kp Z         &kp X          &kp C           &kp V           &kp B           &kp RIGHT_ARROW         &kp K              &kp M           &kp COMMA        &kp DOT         &kp FSLH                 &kp DELETE
-&trans      &kp LGUI      &kp LALT       &kp LCTRL       &lt 1 ESCAPE    &kp SPACE       &kp C_MUTE              &mt LSHIFT TAB     &lt 2 ENTER     &kp LS(LC(LA))   &kp RC(SPACE)   &mt RIGHT_ALT LG(SPACE)
+&kp GRAVE   &kp N1        &kp N2         &kp N3          &kp N4          &kp N5          &kp C_VOLUME_UP         &kp N6             &kp N7          &kp N8            &kp N9          &kp N0                   &kp RIGHT_BRACKET
+&kp TAB     &kp Q         &kp W          &kp F           &kp P           &kp G           &kp C_VOLUME_DOWN       &kp J              &kp L           &kp U             &kp Y           &kp SEMI                 &kp LEFT_BRACKET
+// &kp CAPS    &hml LGUI A   &hml LALT R    &hml LCTRL S    &hml LSHIFT T   &kp D           &kp LEFT_ARROW          &kp H              &hmr LSHIFT N   &hmr LCTRL E      &hmr LALT I     &hmr LGUI O              &kp APOS
+&kp CAPS    &kp A         &kp R          &kp S           &kp T           &kp D           &kp LEFT_ARROW          &kp H              &kp N           &kp E             &kp I           &kp O                    &kp APOS
+&kp LSHFT   &kp Z         &kp X          &kp C           &kp V           &kp B           &kp RIGHT_ARROW         &kp K              &kp M           &kp COMMA         &kp DOT         &kp FSLH                 &kp DELETE
+&trans      &kp LGUI      &kp LALT       &kp LCTRL       &lt 1 ESCAPE    &kp SPACE       &kp C_MUTE              &mt LSHIFT TAB     &lt 2 ENTER     &kp LA(LC(LSHFT)) &kp RC(SPACE)   &mt RIGHT_ALT LG(SPACE)
             >;
 
             display-name = "ALPHA";
