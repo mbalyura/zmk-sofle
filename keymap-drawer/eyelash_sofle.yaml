@@ -62,7 +62,7 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
-  - Sft+Ctl+LA
+  - Alt+Ctl+$$mdi:apple-keyboard-shift$$
   - Ctl+$$mdi:keyboard-space$$
   - {t: 'Gui+$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-option$$'}
   NAV:
