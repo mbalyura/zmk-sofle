@@ -84,16 +84,23 @@
             hold-trigger-on-release;
         };
 
-        lt_nav: lt_nav {
+        lt_nav: layertap_nav {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&nav_ug>, <&kp>;
             tapping-term-ms = <300>;
         };
+
+        lt_sym: layertap_sym {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&sym_ug>, <&kp>;
+            tapping-term-ms = <300>;
+        };
     };
 
     macros {
-        nav_ug: nav_ug {
+        lug: layer_underglow {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             wait-ms = <0>;
@@ -107,6 +114,18 @@
                 , <&macro_release &mo 1>
                 , <&macro_tap &rgb_ug RGB_OFF>;
         };
+
+        nav_ug: nav_layer_underglow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&lug 1 BLUE>;
+        };
+
+        sym_ug: sym_layer_underglow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&lug 2 RED>;
+        };
     };
 
     keymap {
@@ -119,7 +138,7 @@
 // &kp CAPS    &hml LGUI A   &hml LALT R    &hml LCTRL S    &hml LSHIFT T   &kp D           &kp LEFT_ARROW          &kp H              &hmr LSHIFT N   &hmr LCTRL E      &hmr LALT I     &hmr LGUI O              &kp APOS
 &kp BSPC    &kp A         &kp R          &kp S           &kp T           &kp D           &kp LEFT_ARROW          &kp H              &kp N           &kp E             &kp I           &kp O                    &kp APOS
 &kp LSHFT   &kp Z         &kp X          &kp C           &kp V           &kp B           &kp RIGHT_ARROW         &kp K              &kp M           &kp COMMA         &kp DOT         &kp FSLH                 &kp DELETE
-&trans      &kp LGUI      &kp LALT       &kp LCTRL       &lt_nav 1 BLUE ESCAPE         &kp SPACE       &kp C_MUTE              &mt LSHIFT TAB     &lt 2 ENTER     &kp LA(LC(LSHFT)) &kp RC(SPACE)   &mt RIGHT_ALT LG(SPACE)
+&trans      &kp LGUI      &kp LALT       &kp LCTRL       &lt_nav 0 ESCAPE         &kp SPACE       &kp C_MUTE              &mt LSHIFT TAB     &lt_sym 0 ENTER     &kp LA(LC(LSHFT)) &kp RC(SPACE)   &mt RIGHT_ALT LG(SPACE)
             >;
 
             display-name = "ALPHA";
