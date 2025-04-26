@@ -12,8 +12,8 @@
 
 
 // colors
-#difine RGB_BLUE RGB_COLOR_HSB(300,100,50)
-#difine RGB_RED RGB_COLOR_HSB(100,100,50)
+#define RGB_BLUE RGB_COLOR_HSB(300,100,50)
+#define RGB_RED RGB_COLOR_HSB(100,100,50)
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
