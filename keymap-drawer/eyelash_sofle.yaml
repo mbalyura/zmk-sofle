@@ -57,11 +57,11 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-esc$$', h: '&layer_ug 1 RGB_BLUE 0'}
+  - {t: '$$mdi:keyboard-esc$$', h: '&layer_ug 1 RGB_COLOR_HSB(300,100,50) 0'}
   - $$mdi:keyboard-space$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-return$$', h: '&layer_ug 2 RGB_RED 0'}
+  - {t: '$$mdi:keyboard-return$$', h: '&layer_ug 2 RGB_COLOR_HSB(100,100,50) 0'}
   - Alt+Ctl+$$mdi:apple-keyboard-shift$$
   - Ctl+$$mdi:keyboard-space$$
   - {t: 'Gui+$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-option$$'}
