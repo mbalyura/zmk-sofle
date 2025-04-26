@@ -57,7 +57,7 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - '&lt_nav ESCAPE'
+  - '&lt_nav 1 RGB_COLOR_HSB_VAL(233,85,50) ESCAPE'
   - $$mdi:keyboard-space$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
