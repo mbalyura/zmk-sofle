@@ -27,7 +27,7 @@ layers:
   - Y
   - {t: ;, s: ':'}
   - {t: '[', s: '{'}
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - A
   - R
   - S
@@ -57,7 +57,7 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-esc$$', h: '&nav_ug 1'}
+  - {t: '$$mdi:keyboard-esc$$', h: '&nav_ug 1 0'}
   - $$mdi:keyboard-space$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
