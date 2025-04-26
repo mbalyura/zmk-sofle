@@ -57,7 +57,7 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-esc$$', h: '&nav_ug 1 X'}
+  - '&lt_nav ESCAPE'
   - $$mdi:keyboard-space$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
