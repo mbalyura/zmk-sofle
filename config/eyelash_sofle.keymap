@@ -136,7 +136,7 @@
 // &trans      &kp N1        &kp N2        &kp N3           &kp N4                &kp N5          &mmv MOVE_DOWN          &kp N6             &kp N7                 &kp N8          &kp N9            &kp N0                 &kp F12
 &trans      &kp EXCL      &kp AT        &kp HASH         &kp DOLLAR            &kp PERCENT     &mmv MOVE_DOWN          &kp CARET          &kp AMPERSAND          &kp ASTERISK    &kp LPAR          &kp RPAR               &kp F12
 &trans      &kp PLUS      &kp EQUAL     &kp MINUS        &kp UNDER             &kp LBRC        &mmv MOVE_LEFT          &kp RBRC           &sk LSHIFT             &sk LCTRL       &sk LALT          &kp LGUI               &kp PRINTSCREEN
-&trans      &kp PIPE      &kp GRAVE     &caps_word       &kp LEFT_PARENTHESIS  &kp LBKT        &mmv MOVE_RIGHT         &kp RBKT           &kp RIGHT_PARENTHESIS  &trans          &trans            &kp BACKSLASH          &trans
+&trans      &kp PIPE      &kp GRAVE     &caps_word       &kp LEFT_PARENTHESIS  &kp LBKT        &mmv MOVE_RIGHT         &kp RBKT           &kp RIGHT_PARENTHESIS  &trans          &kp TILDE         &kp BACKSLASH          &trans
 &trans      &trans        &trans        &trans           &trans                &trans          &mkp RCLK               &trans             &trans                 &trans          &trans            &trans
             >;
 
